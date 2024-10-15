@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Junior Web Developer CV for Abdullah Hamdy">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Abdullah Hamdy - Junior Web Developer CV</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --background-color: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 2rem;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+        }
+
+        .name {
+            color: var(--secondary-color);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        .section-title {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 1rem;
+        }
+
+        .item-title {
+            color: var(--primary-color);
+        }
+
+        .date {
+            font-style: italic;
+            color: #777;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.3rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: transform 0.2s ease;
+        }
+
+        .skill-tag:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .header, .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-pic {
+                margin: 0 auto;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .social-icons {
+                display: flex;
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+
+        .social-icons a {
+                color: var(--primary-color);
+                font-size: 1.5rem;
+                transition: color 0.3s ease;
+            }
+
+        .social-icons a:hover {
+                color: var(--secondary-color);
+            }
+
+        .section p {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+        .section p i {
+                color: var(--primary-color);
+            }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="./me.jpg" alt="Abdullah Hamdy" class="profile-pic" width="150" height="150">
+            <div>
+                <h1 class="name">Abdullah Hamdy</h1>
+                <p class="tagline">I’m a web developer focused on creating clean, user-friendly websites with JavaScript and React.</p>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="left-column">
+                <section class="section" aria-labelledby="experience-heading">
+                    <h2 id="experience-heading" class="section-title">Experience</h2>
+                    <div class="experience-item">
+                        <h3 class="item-title"> Search Engine Evaluator</h3>
+                        <p class="date">Appen | Feb 2016 - Feb 2024</p>
+                        <ul>
+                            <li>Evaluated and rated search engine results for accuracy, relevance, and quality, improving the user experience by ensuring top results aligned with search intent.</li>
+                            <li>Analyzed and provided feedback on various types of content, including web pages, images, and ads, to optimize search algorithms.</li>
+                            <li>Followed detailed guidelines to assess content quality and relevance, helping refine search engine performance and enhance user satisfaction.</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="experience-item">
+                        <h3 class="item-title">Web Development Intern</h3>
+                        <p class="date">Another Company | Jun 2021 - Dec 2021</p>
+                        <ul>
+                            <li>Assisted in the development of company websites and web applications</li>
+                            <li>Gained hands-on experience with modern web technologies and frameworks</li>
+                            <li>Participated in code reviews and learned best practices in web development</li>
+                        </ul>
+                    </div> -->
+                </section>
+                <section class="section" aria-labelledby="education-heading">
+                    <h2 id="education-heading" class="section-title">Education</h2>
+                    <div class="education-item">
+                        <h3 class="item-title">Bachelor of Electrical Engineering</h3>
+                        <p class="date">Cairo University</p>
+                    </div>
+                </section>
+            </div>
+            <div class="right-column">
+                <section class="section" aria-labelledby="skills-heading">
+                    <h2 id="skills-heading" class="section-title">Skills</h2>
+                    <div class="skills-list">
+                        <span class="skill-tag">Googling
+                        <span class="skill-tag">HTML5
+                        <span class="skill-tag">CSS3
+                        <span class="skill-tag">JavaScript
+                        <span class="skill-tag">React
+                        <span class="skill-tag">Node.js
+                        <span class="skill-tag">Git, Github and Version Control
+                        <span class="skill-tag">Responsive Design
+                        <span class="skill-tag">PostgreSQL
+                    </div>
+                </section>
+                <section class="section" aria-labelledby="contact-heading">
+                    <h2 id="contact-heading" class="section-title">Contact</h2>
+                    <p><i class="fas fa-envelope"></i> abdotaha728@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (+20) 01097590474</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Giza, Egypt</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D9%84%D9%87-%D8%AD%D9%85%D8%AF%D9%8A-b00a3bb0/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/abdullah582" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </section>                
+            </div>
+        </main>
+    </div>
+</body>
+</html>
