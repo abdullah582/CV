@@ -1,0 +1,2 @@
+git config --global user.name "Abdullah"
+git config --global user.email "<a href="mailto:abdotaha728@gmail.com">abdotaha728@gmail.com/a>"
